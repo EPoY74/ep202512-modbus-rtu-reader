@@ -1,0 +1,27 @@
+[project]
+name = "ep202512-modbus-rtu-reader"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pymodbus[serial]>=3.11.4",
+    "types-pyserial>=3.5.0.20251001",
+]
+
+
+[tool.ruff]
+line-length = 101
+
+[tool.ruff.format]
+quote-style = "double"
+
+#рекомендуется по pep8
+indent-style = "space" 
+
+docstring-code-format = true
+
+[tool.ruff.lint]
+select = ["E", "F", "UP", "B", "SIM", "I", "A", "C", "T"]
+
+# ignore = []
